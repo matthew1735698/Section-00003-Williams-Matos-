@@ -17,7 +17,7 @@ public class biomagnificationTermProject {
 	public static final double[] N15 = {0.0, 0.0, 5.41, 5.75, 5.75, 8.13, 7.11, 7.11, 9.83, 12.21, 12.55, 11.87, 10.85, 0.0};
 
 	// Array storing the average BMF values of each trophic levels
-	public static final double[] BMF = {0.393, 17.435, .16};
+	public static final double[] BMF = {0.393, 17.435, .17};
 
 	
 	public static double planktonAbsorption(double MeHgInWaterFormula, double planktonsize) {
