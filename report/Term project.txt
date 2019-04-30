@@ -6,7 +6,7 @@ Tuesday, April 23rd, 2019
 <<<<<<< HEAD
 Preliminary: Biomagnification of MeHg through trophic levels in the Bay of Fundy
 =======
-Preliminary: Biomagnification of MeHg through trophic levels in the bay of fundy
+Preliminary: Biomagnification of MeHg through trophic levels in the Bay of Fundy
 >>>>>>> 1267c9d584de51bd376312836207b7075f235ea3
 
 
@@ -18,7 +18,7 @@ Introduction
 <<<<<<< HEAD
 For our term project, we decided to study the effects of Methyl-Mercury (MeHg) biomagnification through different trophic levels of marine animals located in the Bay of Fundy. Due to the large surface area of certain aquatic organisms such as phytoplankton, MeHg, a compound of Mercury, is easily absorbed and subsequently transferred up the trophic chain through prey consumption and/or female to offspring transfer. Furthermore, MeHg is also more easily transferable up the trophic chain than inorganic mercury. Seeing as though the consumption of fish and seafood amongst humans is at an all-time high, we decided to ask the question: what initial amount of MeHg in a primary producer would eventually lead -- through biomagnification -- to human neurotoxicity if consumed? By using the trophic levels of different organisms, their average mass, amount consumed, as well as birth and death rates all while taking account the total magnification factor (dependent on their zone), we plan to computationally calculate the amount of bioaccumulated MeHG in organisms of the highest trophic order.
 =======
-For our term project, we decided to study the effects of methylmercury (MeHg) biomagnification through different trophic levels of marine animals located in the Bay of Fundy. Due to the large surface area of certain aquatic organisms such as phytoplankton, MeHg, a compound of Mercury, is easily absorbed and subsequently transferred up the trophic chain through prey consumption and/or female to offspring transfer. Furthermore, MeHg is also more easily transferable up the trophic chain than inorganic mercury. Seeing as though the consumption of fish and seafood amongst humans is at an all-time high, we decided to ask the question: what initial amount of MeHg in a primary producer would eventually lead -- through biomagnification -- to human neurotoxicity if consumed? By using the trophic levels of different organisms, their average mass, amount consumed, as well as birth and death rates all while taking account the total magnification factor (dependent on their zone), we plan to computationally calculate the amount of bioaccumulated MeHG in organisms of the highest trophic order.
+For our term project, we decided to study the effects of Methyl mercury (MeHg) biomagnification through different trophic levels of marine animals located in the Bay of Fundy. Due to the large surface area of certain aquatic organisms such as phytoplankton, MeHg, a compound of Mercury, is easily absorbed and subsequently transferred up the trophic chain through prey consumption and/or female to offspring transfer. Furthermore, MeHg is also more easily transferable up the trophic chain than inorganic mercury. Seeing as though the consumption of fish and seafood amongst humans is at an all-time high, we decided to ask the question: what initial amount of MeHg in a primary producer would eventually lead -- through biomagnification -- to human neurotoxicity if consumed? By using the trophic levels of different organisms, their average mass, amount consumed, as well as birth and death rates all while taking account the total magnification factor (dependent on their zone), we plan to computationally calculate the amount of bioaccumulated MeHG in organisms of the highest trophic order.
 >>>>>>> 1267c9d584de51bd376312836207b7075f235ea3
 
 
@@ -31,10 +31,10 @@ The values of this computational model are based on the research article “Bioa
 
 In our project, we look duplicate the the final results through differential equations. This model can be applied to instances in which Methyl-Mercury has been introduced into an ecosystem and is transferred between organisms of different trophic levels through predator to prey consumption.
 =======
-The values of this computational model are based on the research article “Bioaccumulation of methylmercury within the marine food web of the outer Bay of Fundy, Gulf of Maine” by Gareth Harding, John Dalziel, and Peter Vass. The scientific paper discusses the relationship between different trophic levels, size of organisms within the trophic levels and most importantly, the concentration of methylmercury (MeHg) found in the organisms.
+The values of this computational model are based on the research article “Bioaccumulation of Methyl-Mercury within the marine food web of the outer Bay of Fundy, Gulf of Maine” by Gareth Harding, John Dalziel, and Peter Vass. The scientific paper discusses the relationship between different trophic levels, size of organisms within the trophic levels and most importantly, the concentration of Methyl-Mercury (MeHg) found in the organisms.
 
 
-In our project, we look duplicate the the final results through differential equations. This model can be applied to instances in which methylmercury has been introduced into an ecosystem and is transferred between organisms of different trophic levels through predator to prey consumption.
+In our project, we look duplicate the the final results through differential equations. This model can be applied to instances in which Methyl-Mercury has been introduced into an ecosystem and is transferred between organisms of different trophic levels through predator to prey consumption.
 >>>>>>> 1267c9d584de51bd376312836207b7075f235ea3
 
 
@@ -56,7 +56,7 @@ Description of Model
 <<<<<<< HEAD
 Seeing as though the foundation of this term project is based on the Methyl-mercury levels in the Bay of Fundy, the following equation will be used to account for the slow but constant increase in the toxin levels due to outer sources (fossil fuels, mining, etc.)
 =======
-Seeing as though the foundation of this term project is based on the Methylmercury levels in the bay of fundy, the following equation will be used to account for the slow but constant increase in the toxin levels due to outer sources (fossil fuels, mining, etc.)
+Seeing as though the foundation of this term project is based on the Methyl-Mercury levels in the Bay of Fundy, the following equation will be used to account for the slow but constant increase in the toxin levels due to outer sources (fossil fuels, mining, etc.)
 >>>>>>> 1267c9d584de51bd376312836207b7075f235ea3
 
 
@@ -102,7 +102,7 @@ where BMF is the experimental biomagnification factor, which takes into account 
 
 
 
-where MeHgTL is the bioaccumulation of methylmercury within a specific trophic level
+where MeHgTL is the bioaccumulation of Methyl-Mercury within a specific trophic level
 where BMF is the experimental biomagnification factor, which takes into account birth rates as well as predator consumption of prey.
 >>>>>>> 1267c9d584de51bd376312836207b7075f235ea3
 
