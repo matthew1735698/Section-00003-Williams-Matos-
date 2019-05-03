@@ -95,7 +95,7 @@ public static void main(String[] args)
 
 		// converts concentration from picograms/L to nanograms/gram
 
-		double MeHgngwgT1 = MeHgofT1*0.0000001; 
+		double MeHgngwgT1 = MeHgofT1*0.0000001;
 		double MeHgngwgT2 = MeHgofT2*0.0000001;
 		double MeHgngwgT3 = MeHgofT3*0.0000001;
 		double MeHgngwgT4 = MeHgofT4*0.0000001;
@@ -108,32 +108,33 @@ public static void main(String[] args)
 
 
 		//Print final values to file
-	    outputFile.printf("%6.1f\t%6.1f\t%6.1f\t%6.1f", MeHgofT1, MeHgofT2, MeHgofT3, MeHgofT4);
+	   outputFile.printf("%6.1f\t%6.1f\t%6.1f\t%6.1f", MeHgofT1, MeHgofT2, MeHgofT3, MeHgofT4);
 
 		// Trophic level based on the concentratoin of N15 in a subset of organisms from the Bay of Fundy
 
 		double[] TL = new double[13];
 
-		for (int i = 0; i < TL.length && i <= N15.length; i++) {
+		for (int i = 0; i < TL.length && i <= N15.length; i++)
+		{
 
 		double tlevel = trophicFunction(N15[i]);
 		double roundedtlevel = Math.round (tlevel*100)/ 100.0;
 		TL [i] = roundedtlevel;
-
 		outputFile.printf("%6.1f\n",TL[i]);
 
 		}
 
 
-	outputFile.close();
+		outputFile.close();
 
 
 
 	// Converting the trophic level of the organisms that was calculated to estimated MeHg concenctrations
 
-	double[] MEHG = new double[13];
+	  double[] MEHG = new double[13];
 
-	for (int i = 0; i < MEHG.length; i++) {
+	  for (int i = 0; i < MEHG.length; i++)
+		{
 
 		double mehg = 0.0105*Math.pow(euler(), TL[i]*1.6839);
 		MEHG[i] = mehg;
@@ -142,13 +143,15 @@ public static void main(String[] args)
 		System.out.println("Trophic level of organism "+i+" " +TL[i]);
 		System.out.println(" ");
 		System.out.println(" ");
-	}
+ 		}
 }
-	public static double euler() {
+	public static double euler()
+	{
 
     double e = 0;
     double etemp = 1;
-    for (int i = 1; i < 400; ++i) {
+    for (int i = 1; i < 400; ++i)
+		{
         e += etemp;
         etemp /= i;
     }
