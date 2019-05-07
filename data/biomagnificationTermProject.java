@@ -6,8 +6,6 @@ import java.io.*;
 import java.awt.*;
 import javax.swing.*;
 import java.util.Scanner;
-import org.math.plot.*;
-import org.math.plot.plotObjects.*;
 import java.util.Arrays;
 
 public class biomagnificationTermProject {
@@ -83,9 +81,9 @@ public static void main(String[] args)
 
 				MeHgofT2 = planktonAbsorption(MeHgInWaterFormula, netPlanktonsizeT2);
 
-				MeHgofT3 = MeHgofT3 + (BMF[2] * MeHgofT1andT2 * timeStep);
+				MeHgofT3 = MeHgofT3 + (BMF[1] * MeHgofT1andT2 * timeStep);
 
-				MeHgofT4 = MeHgofT4 + (BMF[3] * MeHgofT3 * timeStep);
+				MeHgofT4 = MeHgofT4 + (BMF[2] * MeHgofT3 * timeStep);
 
 				MeHgofT1andT2 = MeHgofT1 + MeHgofT2;
 
@@ -138,9 +136,9 @@ public static void main(String[] args)
 
 		double mehg = 0.0105*Math.pow(euler(), TL[i]*1.6839);
 		MEHG[i] = mehg;
-		System.out.println("MeHg of orgnanism "+i+" " +MEHG[i]);
+		System.out.println("MeHg of orgnanism "+i+": " +MEHG[i]);
 		System.out.println(" ");
-		System.out.println("Trophic level of organism "+i+" " +TL[i]);
+		System.out.println("Trophic level of organism "+i+": " +TL[i]);
 		System.out.println(" ");
 		System.out.println(" ");
  		}
