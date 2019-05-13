@@ -17,6 +17,8 @@ public class biomagnificationTermProject {
 	// Array storing the average BMF values of each trophic levels
 	public static final double[] BMF = {0.393, 17.435, .17};
 
+	// Array storing the experimental values of MeHg concentrations found from research in the field (for error calculation)
+	public static final double[] MeHgExperimental = {0.05, 0.05, 0.4, 0.5, 0.5, 1.9, 6.9, 6.9, 17.4, 17.4, 15.2, 23.3, 83.9, 0.0};
 	
 	public static double planktonAbsorption(double MeHgInWaterFormula, double planktonsize) {
 		
@@ -87,11 +89,12 @@ public static void main(String[] args) {
 			    
 				yearCounter++;
 				
-				if (yearCounter % year == 0){
+				if (yearCounter % year == 0){ // This increase the current year for the calculation of concentration of MeHg in the plankton 
 					currentYear++;
 				}
-
-			}
+				
+	
+						
 
 		// converts concentration from picograms/L to nanograms/gram
 
@@ -141,6 +144,22 @@ public static void main(String[] args) {
 		System.out.println(" ");
 		System.out.println(" ");
 	}
+	
+	// Checking % error in our model by comparing the actual values of MeHg and those estimated by our model
+		
+		double [] MeHgerror = new double [13];
+			
+			for (int i = 0; i <= MEHG.length; i++){
+			
+			int var = i+1;
+			
+			MeHgerror[i] = Math.abs(100-(((Math.abs(MeHgExperimental[i] - MEHG[i]))/MeHgExperimental[i])*100));
+	        
+			System.out.println("The % error for the point number "+var+" is: "+MeHgerror[i]);
+				
+			}
+
+}
 }
 	public static double euler() {
 
@@ -152,9 +171,10 @@ public static void main(String[] args) {
     }
 	return e;
 	}
-	  
-	  
-	  }
+
+
+}
+
 	
 	
 
