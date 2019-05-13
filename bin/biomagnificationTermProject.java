@@ -6,8 +6,6 @@ import java.io.*;
 import java.awt.*;
 import javax.swing.*;
 import java.util.Scanner;
-import org.math.plot.*;
-import org.math.plot.plotObjects.*;
 import java.util.Arrays;
 
 public class biomagnificationTermProject {
@@ -55,8 +53,9 @@ public static void main(String[] args) {
 */
 
 	double timeStep = 0.1;             
-	double simulationLength = 100;                                                   // Length of the simulation (in days)
+	double simulationLength = 1000;                                                   // Length of the simulation (in days)
 	double currentYear = 219;  
+	int yearCounter = 0;
 	double MeHgInitial = 0.001927;                                                   // pcg/L of mercury in 1800s 
 	double MeHgInWaterFormula = MeHgInitial*Math.pow(10, (0.01589*currentYear));     // Magnification factor comparing concentration of MeHg in organisms vs water through bioaccumulation    
     double MeHgofT1 = 0;
@@ -66,6 +65,7 @@ public static void main(String[] args) {
     double netPlanktonsizeT1 = 	88E-6;
     double netPlanktonsizeT2 = 	875E-6;
 	double MeHgofT1andT2 = MeHgofT1 + MeHgofT2; 
+	int year = 365;
 	
 	
 
@@ -85,7 +85,11 @@ public static void main(String[] args) {
              
 				MeHgofT1andT2 = MeHgofT1 + MeHgofT2; 
 			    
-				currentYear++;
+				yearCounter++;
+				
+				if (yearCounter % year == 0){
+					currentYear++;
+				}
 
 			}
 
@@ -149,9 +153,11 @@ public static void main(String[] args) {
 	return e;
 	}
 	  
-	  }
 	  
+	  }
 	
+	
+
 
 
 
