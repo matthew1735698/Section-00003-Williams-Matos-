@@ -6,19 +6,19 @@ import java.io.*;
 import java.awt.*;
 import javax.swing.*;
 import java.util.Scanner;
-import org.math.plot.*;
-import org.math.plot.plotObjects.*;
 import java.util.Arrays;
 
 public class biomagnificationTermProject {
 
 
 	// Array storing the N15 values for each organism within the trophic levels, data collected from research
-	public static final double[] N15 = {0.0, 0.0, 5.41, 5.75, 5.75, 8.13, 7.11, 7.11, 9.83, 12.21, 12.55, 11.87, 10.85, 0.0};
+	public static final double[] N15 = {0.0, 0.0, 5.41, 5.75, 5.75, 8.13, 7.11, 7.11, 9.83, 10.85, 11.87, 12.55, 12.21, 0.0};
 
 	// Array storing the average BMF values of each trophic levels
-	public static final double[] BMF = {0.393, 17.435, .17};
+	public static final double[] BMF = {0.393, 2.435, 3.25};
 
+	// Array storing the experimental values of MeHg concentrations found from research in the field (for error calculation)
+	public static final double[] MeHgExperimental = {0.09, 0.05, 0.4, 0.5, 0.5, 5.1, 5.3, 6.9, 17.4, 83.9, 54.6, 27.1, 27.2, 0.0};
 	
 	public static double planktonAbsorption(double MeHgInWaterFormula, double planktonsize) {
 		
@@ -55,8 +55,9 @@ public static void main(String[] args) {
 */
 
 	double timeStep = 0.1;             
-	double simulationLength = 100;                                                   // Length of the simulation (in days)
+	double simulationLength = 10;                                                   // Length of the simulation (in days)
 	double currentYear = 219;  
+	int yearCounter = 0;
 	double MeHgInitial = 0.001927;                                                   // pcg/L of mercury in 1800s 
 	double MeHgInWaterFormula = MeHgInitial*Math.pow(10, (0.01589*currentYear));     // Magnification factor comparing concentration of MeHg in organisms vs water through bioaccumulation    
     double MeHgofT1 = 0;
@@ -66,6 +67,7 @@ public static void main(String[] args) {
     double netPlanktonsizeT1 = 	88E-6;
     double netPlanktonsizeT2 = 	875E-6;
 	double MeHgofT1andT2 = MeHgofT1 + MeHgofT2; 
+	int year = 365;
 	
 	
 
@@ -73,7 +75,7 @@ public static void main(String[] args) {
 //  Write out each of the differential equations & Euler's method
 		int N = (int) (simulationLength/timeStep) + 1;  
 	
-			for (int l = 1; l < N; l++) {
+			for (int j = 0; j < N; j++) {
 		
 				MeHgofT1 = planktonAbsorption(MeHgInWaterFormula, netPlanktonsizeT1);
 				
@@ -85,9 +87,14 @@ public static void main(String[] args) {
              
 				MeHgofT1andT2 = MeHgofT1 + MeHgofT2; 
 			    
-				currentYear++;
-
-			}
+				yearCounter++;
+				
+				if (yearCounter % year == 0){ // This increase the current year for the calculation of concentration of MeHg in the plankton 
+					currentYear++;
+				}
+				
+	
+						
 
 		// converts concentration from picograms/L to nanograms/gram
 
@@ -100,15 +107,14 @@ public static void main(String[] args) {
 		System.out.println("The average level of MeHg at T3 in ng/g is : " +MeHgngwgT3);
 		System.out.println("The average level of MeHg at T2 in ng/g is : " +MeHgngwgT2);
 		System.out.println("The average level of MeHg at T1 in ng/g is : " +MeHgngwgT1);
-		
-		
 
 		//Print final values to file
 	    outputFile.printf("%6.1f\t%6.1f\t%6.1f\t%6.1f", MeHgofT1, MeHgofT2, MeHgofT3, MeHgofT4);
 
-		// Trophic level based on the concentratoin of N15 in a subset of organisms from the Bay of Fundy 
+		// Trophic level based on the concentratoin of N15 in a subset of 
+		// organisms from the Bay of Fundy 
 
-		double[] TL = new double[13];
+		double[] TL = new double[14];
 	
 		for (int i = 0; i < TL.length && i <= N15.length; i++) {
 		
@@ -123,9 +129,10 @@ public static void main(String[] args) {
 	
 	outputFile.close();
 	
-	// Converting the trophic level of the organisms that was calculated to estimated MeHg concenctrations
+	// Converting the trophic level of the organisms that was calculated 
+	// to estimated MeHg concenctrations
 	
-	double[] MEHG = new double[13];
+	double[] MEHG = new double[14];
 	
 	for (int i = 0; i < MEHG.length; i++) {
 		
@@ -137,6 +144,26 @@ public static void main(String[] args) {
 		System.out.println(" ");
 		System.out.println(" ");
 	}
+	
+	// Checking % error in our model by comparing the actual values of MeHg and those estimated by our model
+		
+		double [] MeHgerror = new double [14];
+			
+			for (int i = 0; i < MEHG.length; i++){
+			
+			int var = i+1;
+			
+			MeHgerror[i] = Math.abs(100-(((Math.abs(MeHgExperimental[i] - MEHG[i]))/MeHgExperimental[i])*100));
+	        
+			System.out.println("The % error for the point number "+var+" is: "+MeHgerror[i]);
+				
+			}
+
+}
+
+		
+		
+		
 }
 	public static double euler() {
 
@@ -148,10 +175,13 @@ public static void main(String[] args) {
     }
 	return e;
 	}
-	  
-	  }
-	  
+
+
+}
+
 	
+	
+
 
 
 
