@@ -144,44 +144,7 @@ public static void main(String[] args)
 							System.out.println("The % error for the organism number "+var+" is: "+MeHgerror[i]);
 
 							}
-		//Print final values to file
-	   outputFile.printf("%6.1f\t%6.1f\t%6.1f\t%6.1f", MeHgofT1, MeHgofT2, MeHgofT3, MeHgofT4);
 
-		// Trophic level based on the concentratoin of N15 in a subset of organisms from the Bay of Fundy
-
-		double[] TL = new double[13];
-
-		for (int i = 0; i < TL.length && i <= N15.length; i++)
-		{
-
-		double tlevel = trophicFunction(N15[i]);
-		double roundedtlevel = Math.round (tlevel*100)/ 100.0;
-		TL [i] = roundedtlevel;
-		outputFile.printf("%6.1f\n",TL[i]);
-
-		}
-
-
-		outputFile.close();
-
-
-
-	// Converting the trophic level of the organisms that was calculated to estimated MeHg concenctrations
-
-	  double[] MEHG = new double[13];
-
-	  for (int i = 0; i < MEHG.length; i++)
-		{
-
-		double mehg = 0.0105*Math.pow(euler(), TL[i]*1.6839);
-		MEHG[i] = mehg;
-		System.out.println("MeHg of orgnanism "+i+" " +MEHG[i]);
-		System.out.println(" ");
-		System.out.println("Trophic level of organism "+i+" " +TL[i]);
-		System.out.println(" ");
-		System.out.println(" ");
- 		}
-}
 	public static double euler()
 	{
 
