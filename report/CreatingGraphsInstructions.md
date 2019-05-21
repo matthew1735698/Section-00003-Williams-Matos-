@@ -57,7 +57,7 @@ Copied results should look like this:
 
 ### Step 4
 
-On the same graph, plot results found from the scientific paper **Bioaccumulation of methylmercury within the marine food web of the outer Bay of Fundy, Gulf of Maine* by Gareth Harding, John Dalziel, and Peter Vass.*
+On the same graph, plot results found from the scientific paper **- *Bioaccumulation of methylmercury within the marine food web of the outer Bay of Fundy, Gulf of Maine* by Gareth Harding, John Dalziel, and Peter Vass.**
 
 Use these values
 
