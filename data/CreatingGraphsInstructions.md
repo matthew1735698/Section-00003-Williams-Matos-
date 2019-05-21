@@ -93,9 +93,9 @@ Use these values
 
 
 
-## Graph 2: Toxcicity in Humans 
+## Graph 2: Toxicity in Humans 
 
-![Graph 12](toxicxlevelgraph.png)
+![Graph 12](toxiclevelgraph.png)
 
 
 ### Step 1
