@@ -59,10 +59,10 @@ Copied results should look like this:
 
 | Tropic Level  | MeHg Concentrations (in ng/g)|
 | ------------- |:-------------:|
-| 1             | 0|
-| 2             | 0      |
-| 2             | 0     |
-| 4             | 0 |
+| 1             | 0.1308  |
+| 2             | 0.025966    |
+| 2             | 0.001109   |
+| 4             | 0.002445 |
 
 
 
