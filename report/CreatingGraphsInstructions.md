@@ -15,10 +15,16 @@ Wednesday, May 22nd, 2019
 ![Graph 1](thecomparegraph.png)
 
 
+<pre>
+
 ### Step 1:
 
 Run *BiomagnificationTermProject.java* (found in **Data Folder**)
 
+
+</pre>
+
+<pre>
 ### Step 2: 
 
 Copy results from loop 1 to excel. Plot trophic level on X-Axis and MeHg Levels (in ng/kg) on y - axis
@@ -39,8 +45,10 @@ Copied results should look like this:
 | 4.5           | 20.5152800785835|
 | 4.2           | 12.3789813031645      |
 
+</pre>
 
 
+<pre>
 ### Step 3
 
 From results found through running *BiomagnificationTermProject.java*, plot Euler's method of first loop. Plot these values on the same graph using *ADD DATA VALUES* option
@@ -55,6 +63,10 @@ Copied results should look like this:
 | 4                | 0 |
 
 
+</pre>
+
+
+<pre>
 ### Step 4
 
 On the same graph, plot results found from the scientific paper **- *Bioaccumulation of methylmercury within the marine food web of the outer Bay of Fundy, Gulf of Maine* by Gareth Harding, John Dalziel, and Peter Vass.**
@@ -75,3 +87,8 @@ Use these values
 | 4.5           | 54.6      |
 | 4.7           | 27.1 |
 | 4.6           |  27.1|
+
+
+</pre>
+
+
