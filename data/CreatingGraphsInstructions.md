@@ -146,6 +146,7 @@ Use the values:
 
 On the same graph, plot the line at which MeHg levels within organisms is considered *toxic* to humans
 
+Use the values:
 
 | Tropic Level  | Harmful MeHg Levels to humans (in ng/g)|
 | ------------- |:-------------:|
