@@ -26,7 +26,7 @@ Run *BiomagnificationTermProject.java* (found in **Data Folder**)
 
 ### Step 2: 
 
-Copy results from loop 1 to excel. Plot trophic level on X-Axis and MeHg Levels (in ng/kg) on y - axis
+Copy results from loop 1 to excel. Plot trophic level on X-Axis and MeHg Levels (in ng/g) on y - axis
 
 Copied results should look like this:
 
@@ -50,7 +50,7 @@ Copied results should look like this:
 
 ### Step 3
 
-From results found through running *BiomagnificationTermProject.java*, plot Euler's method of first loop. Plot these values on the same graph using *ADD DATA VALUES* option
+From results found through running *BiomagnificationTermProject.java*, plot the data points of the average MeHg at each trophic level (This serves as a comparison to the experimental values, there is no way of estimating the % error). Plot these values on the same graph using *ADD DATA VALUES* option
 
 Copied results should look like this:
 
