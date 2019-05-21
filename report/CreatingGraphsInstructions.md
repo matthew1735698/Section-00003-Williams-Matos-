@@ -31,7 +31,7 @@ Copy results from loop 1 to excel. Plot trophic level on X-Axis and MeHg Levels 
 Copied results should look like this:
 
 
-| Tropic Level  | MeHg Concentrations (in ng/Kg)|
+| Tropic Level  | MeHg Concentrations (in ng/g)|
 | ------------- |:-------------:|
 | 1.01          | 0.057518938406336|
 | 2.6           | 0.836741563      |
@@ -53,13 +53,13 @@ Copied results should look like this:
 From results found through running *BiomagnificationTermProject.java*, plot Euler's method of first loop. Plot these values on the same graph using *ADD DATA VALUES* option
 
 Copied results should look like this:
-</pre>
-| Tropic Level  | MeHg Concentrations (in ng/Kg)|
+
+| Tropic Level  | MeHg Concentrations (in ng/g)|
 | ------------- |:-------------:|
 | 1             | 0|
 | 2             | 0      |
 | 2             | 0     |
-| 4                | 0 |
+| 4             | 0 |
 
 
 
@@ -73,7 +73,7 @@ Use these values
 
 
 
-| Tropic Level  | MeHg Concentrations (in ng/Kg)|
+| Tropic Level  | MeHg Concentrations (in ng/g)|
 | ------------- |:-------------:|
 | 1          | 0.09|
 | 1           | 0.05     |
