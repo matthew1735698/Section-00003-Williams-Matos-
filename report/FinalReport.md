@@ -66,18 +66,16 @@ When a compound of mercury enters an ecosystem, it is absorbed or adsorbed by an
 
 
 ### Description of Computational Method
-Description of Computational Method
 
-In order to simulate biomagnification through organisms of different trophic levels, numerical methods were used. The constants used within the equations were taken from real-life data documented by scientific papers. The initial levels of MeHg were calculated through the use of a simple system of equations.  By taking into account the initial MeHg levels in the bay of Fundy area pre-industrial revolution, an equation calculating the final MeHg concentration was built using the time (in years) as the variable. 
+In order to simulate biomagnification through organisms of different trophic levels, numerical methods were used. The constants used within the equations were taken from real-life data documented by scientific papers. The initial levels of MeHg were calculated through the use of a simple system of equations.  By taking into account the initial MeHg levels in the Bay of Fundy area pre-industrial revolution, an equation calculating the final MeHg concentration was built using the time (in years) as the variable. 
 
- ![Journal Results](number5.png)
+ ![Values](number5.png)
+ 
+To begin, a differential equation is used to calculate the final level of Methylmercury found in the water. We include this calculated value in the next differential equation: the measurement of the amount of MeHg (in nm/g) in primary producers, specifically micro and macro-plankton. The following formula is used to calculate the trophic levels based on the experimental isotopic biomagnification levels. 
 
-To begin, a differential equation is used to 
-calculate the final level of Methylmercury found in the water. We include this calculated value in the next differential equation: the measurement of the amount of MeHg (in nm/kg) in primary producers, specifically micro and macro-plankton. The following formula is used to calculate the trophic levels based on the experimental isotopic biomagnification levels. 
+Next, we use our modified SIR model to calculate an estimate of the MeHg levels at each trophic level of this ecosystem. Using this data, we plotted a trophic level vs MeHg graph and got the equation describing the exponential relationship between the increase in trophic level and the rapid increase in MeHg concentration.
 
-Next, we used Euler’s method is used to calculate an estimate of the MeHg levels at each trophic level of this ecosystem. Using a modified SIR model, we were able to generate estimations of the concentration of MeHg at each trophic level. Using this data, we plotted a trophic level vs MeHg graph and got the equation describing the exponential relationship between the increase in trophic level and the rapid increase in MeHg concentration.
-
-We can then use the formula seen below that we found in our research to determine the expected trophic level for each organism in our test set, using only the concentration of the Nitrogen 15 isotope found in them. Then we can plug the trophic level values for each individual organism into the exponential function we derived from our Euler’s method to find their estimated MeHg concentration. Now we have values derived from our model for the concentration of MeHg for each organism, and all we needed was the N15 
+We can then use the formula seen below that we found in our research to determine the expected trophic level for each organism in our test set, using only the concentration of the Nitrogen 15 isotope found in them. Then we can plug the trophic level values for each individual organism into the exponential function we derived from the average MeHg at each trophic level (from the SIR model)  to find their estimated MeHg concentration. Now we have values derived from our model for the concentration of MeHg for each organism, and all we needed was the N15 concentration from them, an estimate of the biomagnification factors in the food chain, and the initial concentration of MeHg in the water. The latter of the two are very easily assumed in cases where minimal research has been done as MeHg concentrations are well documented in most areas and biomagnification factors are often similar in similar environments.
 
 
 ### Results
