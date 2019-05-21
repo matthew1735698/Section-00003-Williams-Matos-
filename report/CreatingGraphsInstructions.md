@@ -17,7 +17,7 @@ Wednesday, May 22nd, 2019
 
 ### Step 1:
 
-Run *BiomagnificationTermProject.java* (found in **Data Folder**
+Run *BiomagnificationTermProject.java* (found in **Data Folder**)
 
 ### Step 2: 
 
@@ -38,3 +38,40 @@ Copied results should look like this:
 | 4.7           | 28.7302328630565 |
 | 4.5           | 20.5152800785835|
 | 4.2           | 12.3789813031645      |
+
+
+
+### Step 3
+
+From results found through running *BiomagnificationTermProject.java*, plot Euler's method of first loop. Plot these values on the same graph using *ADD DATA VALUES* option
+
+Copied results should look like this:
+
+| Tropic Level  | MeHg Concentrations (in ng/Kg)|
+| ------------- |:-------------:|
+| 1             | 0|
+| 2             | 0      |
+| 2             | 0     |
+| 4                | 0 |
+
+
+### Step 4
+
+On the same graph, plot results found from the scientific paper ***Bioaccumulation of methylmercury within the marine food web of the outer Bay of Fundy, Gulf of Maine* by Gareth Harding, John Dalziel, and Peter Vass.*
+
+Use these values
+
+| Tropic Level  | MeHg Concentrations (in ng/Kg)|
+| ------------- |:-------------:|
+| 1          | 0.09|
+| 1           | 0.05     |
+| 2.6           | 0.4   |
+| 3.7           | 0.5 |
+| 3.4           | 5.1|
+| 3.1           |5.3      |
+| 4.1           |6.9    |
+| 4.9           | 17.4 |
+| 4.2           | 83.9|
+| 4.5           | 54.6      |
+| 4.7           | 27.1 |
+| 4.6           |  27.1|
