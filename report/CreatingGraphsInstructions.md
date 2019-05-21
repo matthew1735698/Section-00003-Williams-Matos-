@@ -1,11 +1,11 @@
 # Instructions
-<pre>
+
 Intro to Computer Programming
 
 Alexandra Matos and Matthew Williams
 
 Wednesday, May 22nd, 2019
-</pre>
+
 # Instructions to Creating Result Graphs
 
 
@@ -15,23 +15,21 @@ Wednesday, May 22nd, 2019
 ![Graph 1](thecomparegraph.png)
 
 
-<pre>
+
 
 ### Step 1:
 
 Run *BiomagnificationTermProject.java* (found in **Data Folder**)
 
 
-</pre>
 
-<pre>
 
 ### Step 2: 
 
 Copy results from loop 1 to excel. Plot trophic level on X-Axis and MeHg Levels (in ng/kg) on y - axis
 
 Copied results should look like this:
-</pre>
+
 
 | Tropic Level  | MeHg Concentrations (in ng/Kg)|
 | ------------- |:-------------:|
@@ -49,7 +47,7 @@ Copied results should look like this:
 
 
 
-<pre>
+
 ### Step 3
 
 From results found through running *BiomagnificationTermProject.java*, plot Euler's method of first loop. Plot these values on the same graph using *ADD DATA VALUES* option
@@ -66,7 +64,6 @@ Copied results should look like this:
 
 
 
-<pre>
 
 ### Step 4
 
@@ -74,7 +71,7 @@ On the same graph, plot results found from the scientific paper **- *Bioaccumula
 
 Use these values
 
-</pre>
+
 
 | Tropic Level  | MeHg Concentrations (in ng/Kg)|
 | ------------- |:-------------:|
