@@ -22,12 +22,13 @@ In our project, we look to duplicate the final results through differential equa
 
 ### Description of Model
 
-Seeing as though the foundation of this term project is based on the Methylmercury levels in the bay of fundy, the following equation will be used to account for the slow but constant increase in the toxin levels due to outer sources (fossil fuels, mining, etc.)
+Seeing as though the foundation of this term project is based on the Methylmercury levels in the bay of fundy, the following equation will be used to account for the slow but constant increase in the toxin levels due to outer sources (fossil fuels, mining, etc.). In order to create this equation, mercury levels from the pre-industrial revolution era were used to create an exponential function that related the increase of mercury levels due to each passing year. 
 
  
  ![First Equation](number1.png)
  
- Primary producers such as plankton and phytoplankton are able to absorb and adsorb the MeHg found in their surrounding aquatic environment. Therefore, we must take into account their size to volume ratio which in turn relates to the total amount of MeHg that can be held within their system. The following equation is used:
+Primary producers such as plankton and phytoplankton are able to absorb and adsorb the MeHg found in their surrounding aquatic environment. Therefore, we must take into account their size to volume ratio which in turn relates to the total amount of MeHg that can be held within their system. In order to obtain the appropriate values, we must take into account the surface area of the planktons. With values from the scientific paper, we constructed an exponential function that relates surface area of primary producer to the absorption rate. In order to calculate the concentration within the primary producer the following equation is used:
+
 
  ![Second Equation](number2.png)
 
