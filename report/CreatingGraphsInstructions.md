@@ -28,13 +28,13 @@ Copied results should look like this:
 
 | Tropic Level  | MeHg Concentrations (in ng/Kg)|
 | ------------- |:-------------:|
-| 1.01          | right-aligned |
-| 2.6           | centered      |
-| 2.7           | are neat      |
-| 3.4           | right-aligned |
-| 3.1           | right-aligned |
-| 3.9           | centered      |
-| 4.6           | are neat      |
-| 4.7           | right-aligned |
-| 4.5           | centered      |
-| 4.2           | are neat      |
+| 1.01          | 0.057518938406336|
+| 2.6           | 0.836741563      |
+| 2.7           | 0.990198331     |
+| 3.4           | 3.21838595663203 |
+| 3.1           | 1.941983703|
+| 3.9           | 7.469514309      |
+| 4.6           |24.2777423560867      |
+| 4.7           | 28.7302328630565 |
+| 4.5           | 20.5152800785835|
+| 4.2           | 12.3789813031645      |
