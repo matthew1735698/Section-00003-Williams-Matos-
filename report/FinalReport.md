@@ -80,4 +80,37 @@ We can then use the formula seen below that we found in our research to determin
 
 ### Results
 
+The simulated results drifted from the expected range so drastically the higher the trophic levels got because the biomagnification factors that dictate the rate of ingestion of MeHg became less representative of the trophic levels due to less data being available to us.
+
+In terms of results, we compared our computational values to the results found in the journal  “Bioaccumulation of Methylmercury within the Marine Food Web of the Outer Bay of Fundy, Gulf of Maine”. While comparing all values found in the journal would be impossible due to the lack of data pertaining to the organisms of higher trophic level, we do see our data following an exponential increase, which mimics the researchers’ findings. The resulting graph of our computational project does show a deviation between our results (those in green) and those of the journal (those in blue), however, this difference can be attributed to the substantially large percent error. Furthermore, when taking into account the toxicity due to methylmercury levels within organisms (in ng/g), we can see that the concentrations, in 2018, become toxic to humans after approximately a trophic level of 3.7.
+
+ ![Comparing Our Values to research values](thecomparegraph.png)
+ 
+ 
+  ![Human toxicicity](toxiclevelgraph.png)
+  
+  The percent error of our model when compared to the data taken in the field by the researchers is significant. This error stems from the issues with our approach to modeling this issue. Firstly, since we did not have access to any sort of data on the feeding and mating habits of the animals in the Bay of Fundy or even an approximation of that data, we had to settle for using the biomagnification factors outlined in the study from which we used our model organisms. These biomagnification factors, while useful on an individual basis, were not representative for an entire trophic level. In hindsight this may seem obvious, as many organisms, even within the same trophic level, vary greatly in size and in MeHg concentration, but this was the only viable way of modelling the ecosystem with the available data. Using these biomagnification factors as a rate of change for every trophic level, our results showed a significantly more delayed magnification of the MeHg levels as the trophic level increased, ranging from 3% error for some organisms to over 80% error for others.   
+
 ### Discussion
+
+Similarly to the results from the scientific journal, our results show an exponential increase of methylmercury levels within an organism based on the trophic level. This confirms that our mathematical model was logically sound, as it did in fact follow the expected trend, however it would still require added layers of complexity and more detailed data to be a viable model for estimating the concentrations of MeHg in ecosystems similar to the Bay of Fundy. 
+
+While the journal focuses on different aspects including the spherical diameter of organisms as well as both MeHg and THg levels, our focused solely on trophic levels and bioaccumulated methylmercury. We restricted our computational model to the concentration of methylmercury and trophic levels due to the lack of other experimental data that could be used to substantiate results yielded from testing other variables like spherical diameter. 
+
+
+
+### *References*
+
+
+Harding, Gareth, et al. “Bioaccumulation of Methylmercury within the Marine Food Web of the Outer Bay of Fundy, Gulf of Maine.” PloS One, Public Library of Science, 16 July 2018, www.ncbi.nlm.nih.gov/pmc/articles/PMC6047777/.
+
+“Why Is There So Much Mercury in Marine Food Webs? Plankton Communities Are the First Step in Bioaccumulation.” Nereus Program - The Nippon Foundation, Nereus Fellow Colin Thackray, 2 Oct. 2018, www.nereusprogram.org/works/why-is-there-so-much-
+Mercury-in-marine-food-webs-plankton-communities-are-the-first-step-in-
+bioaccumulation/.
+
+New Hampshire Department of Environmental Services. “Mercury: Sources, Transport, Deposition, and Impacts.” Environmental Fact Sheet, 2003,www.des.nh.gov/organization/-
+commissioner/pip/factsheets/ard/documents/ard-28.pdf
+
+“Metal, PCB, Dioxin and Furan Concentrations in Fish and Sediments from Four Lakes in Nord-Du-Québec in 2001.” Metal, PCB, Dioxin and Furan Concentrations in Fish and Sediments from Four Lakes in Northern Quebec in 2001, www.environnement.gouv.qc.ca/-
+eau/eco_aqua/chibougamau/index-en.htm.
+
