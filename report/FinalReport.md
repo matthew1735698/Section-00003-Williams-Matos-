@@ -95,8 +95,9 @@ In terms of results, we compared our computational values to the results found i
 
 Similarly to the results from the scientific journal, our results show an exponential increase of methylmercury levels within an organism based on the trophic level. This confirms that our mathematical model was logically sound, as it did in fact follow the expected trend, however it would still require added layers of complexity and more detailed data to be a viable model for estimating the concentrations of MeHg in ecosystems similar to the Bay of Fundy. 
 
-While the journal focuses on different aspects including the spherical diameter of organisms as well as both MeHg and THg levels, our focused solely on trophic levels and bioaccumulated methylmercury. We restricted our computational model to the concentration of methylmercury and trophic levels due to the lack of other experimental data that could be used to substantiate results yielded from testing other variables like spherical diameter. 
+While the journal focuses on different aspects including the spherical diameter of organisms as well as both MeHg and THg levels, our focuse lay solely on trophic levels and bioaccumulated methylmercury. We restricted our computational model to the concentration of methylmercury and trophic levels due to the lack of other experimental data that could be used to substantiate results yielded from testing other variables like spherical diameter. 
 
+In all, our computational model did solve our problem; it helped visually represent the increase of MeHg concentration through trophic levels specific to the Bay of Fundy. 
 
 
 ### *References*
