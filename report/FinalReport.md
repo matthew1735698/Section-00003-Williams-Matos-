@@ -91,7 +91,7 @@ In terms of results, we compared our computational values to the results found i
   
   The percent error of our model when compared to the data taken in the field by the researchers is significant. This error stems from the issues with our approach to modeling this issue. Firstly, since we did not have access to any sort of data on the feeding and mating habits of the animals in the Bay of Fundy or even an approximation of that data, we had to settle for using the biomagnification factors outlined in the study from which we used our model organisms. These biomagnification factors, while useful on an individual basis, were not representative for an entire trophic level. In hindsight this may seem obvious, as many organisms, even within the same trophic level, vary greatly in size and in MeHg concentration, but this was the only viable way of modelling the ecosystem with the available data. Using these biomagnification factors as a rate of change for every trophic level, our results showed a significantly more delayed magnification of the MeHg levels as the trophic level increased, ranging from 3% error for some organisms to over 80% error for others.   
   
-| Organism | MeHg Concentrations - Computational|  MeHg Concentrations - Research Values |Percent Error|
+| Organism | MeHg Concentrations (ng/g) - Computational Values|  MeHg Concentrations(ng/g) - Research Values|Percent Error (%)|
 | ------------- |:-------------:| :-------------: |:-------------:|
 | 1         | 0.057518938406336| 0.09        | 36.09|
 | 2          | 0.057518938406336| 0.05       | 15.04|
