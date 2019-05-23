@@ -88,8 +88,7 @@ In terms of results, we compared our computational values to the results found i
  
  
   ![Human toxicicity](toxiclevelgraph.png)
-  
-  The percent error of our model when compared to the data taken in the field by the researchers is significant. This error stems from the issues with our approach to modeling this issue. Firstly, since we did not have access to any sort of data on the feeding and mating habits of the animals in the Bay of Fundy or even an approximation of that data, we had to settle for using the biomagnification factors outlined in the study from which we used our model organisms. These biomagnification factors, while useful on an individual basis, were not representative for an entire trophic level. In hindsight this may seem obvious, as many organisms, even within the same trophic level, vary greatly in size and in MeHg concentration, but this was the only viable way of modelling the ecosystem with the available data. Using these biomagnification factors as a rate of change for every trophic level, our results showed a significantly more delayed magnification of the MeHg levels as the trophic level increased, ranging from 3% error for some organisms to over 80% error for others.   
+     
   
 | Organism | MeHg Concentrations (ng/g) - Computational Values|  MeHg Concentrations(ng/g) - Research Values|Percent Error (%)|
 | ------------- |:-------------:| :-------------: |:-------------:|
@@ -106,16 +105,16 @@ In terms of results, we compared our computational values to the results found i
 | 11           | 20.5152800785835| 27.1         | 24.32|
 | 12          | 12.3789813031645      | 27.1         | 55.72|
 
-
+  The percent error of our model when compared to the data taken in the field by the researchers is significant. This error stems from the issues with our approach to modeling this issue. Firstly, since we did not have access to any sort of data on the feeding and mating habits of the animals in the Bay of Fundy or even an approximation of that data, so we had to settle for using the biomagnification factors outlined in the study to model the simlation. We took the average of these biomagnification factors of all the organisms outlined in the expeirment in each trophic level and used those values as rates of increase for the MeHg. However, while they are useful on an individual basis, biomagnification values are not representative of an entire trophic level. In hindsight this may seem obvious as many organisms, even within the same trophic level, vary greatly in size and in MeHg concentration, but this was the only viable way of modelling the ecosystem with the available data. Using these biomagnification factors as a rate of change for every trophic level, our results showed a significantly more delayed magnification of the MeHg levels as the trophic level increased, ranging from 25% error for some organisms to over 109% error for others.
 
 
 ### Discussion
 
 Similarly to the results from the scientific journal, our results show an exponential increase of methylmercury levels within an organism based on the trophic level. This confirms that our mathematical model was logically sound, as it did in fact follow the expected trend, however it would still require added layers of complexity and more detailed data to be a viable model for estimating the concentrations of MeHg in ecosystems similar to the Bay of Fundy. 
 
-While the journal focuses on different aspects including the spherical diameter of organisms as well as both MeHg and THg levels, our focuse lay solely on trophic levels and bioaccumulated methylmercury. We restricted our computational model to the concentration of methylmercury and trophic levels due to the lack of other experimental data that could be used to substantiate results yielded from testing other variables like spherical diameter. 
+While the journal focuses on different aspects including the spherical diameter of organisms as well as both MeHg and THg levels, our focuse lay solely on trophic levels and bioaccumulated methylmercury. We restricted our computational model to the concentration of methylmercury and trophic levels due to the lack of other experimental data that could be used to substantiate results yielded from testing other variables like spherical diameter. Also, modelling an ecosystem using data such as spherical diameter poses new challenges that lay beyond the scope of our knowledge.
 
-In all, our computational model did solve our problem; it helped visually represent the increase of MeHg concentration through trophic levels specific to the Bay of Fundy. 
+In spite of the model's underwhelming results, we believe that there is value in the idea behind the idea of estimating the methylmuercury concentration in ecosystems on which humans depend. Even a simple model like this can give people a better insight as to whether the ponds and lakes from which they eat are safe. One of the aspects in which our model proves its value is the minimal amount of data required to get an estimation of toxicity. Only requiring the MeHg concentration in the water, the biomagnification values, and the nitrogen 15 isotope values makes it flexible and widely applicable. On top of that, this data is usually easy to come by for more popular bodies of water, or it is easily estimated. To conclude, our computational model solved our problem; it helped visually represent the increase of MeHg concentration through trophic levels specific to the Bay of Fundy and, with the proper tools, it could make great strides in improving its accuracy.
 
 
 ### *References*
